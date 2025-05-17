@@ -376,7 +376,7 @@ def main():
     
     # Create and run the Flask app
     app = spam_detector.create_flask_app()
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
 
 # Run the application
 if __name__ == '__main__':
